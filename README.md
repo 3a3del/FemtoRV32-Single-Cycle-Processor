@@ -5,8 +5,8 @@ This project implements a 32-bit RISC-V Single-Cycle Processor that supports tha
 ![](https://github.com/3a3del/FemtoRV32-Single-Cycle-Processor/blob/main/Arch.png)
   
 ## Features
- - "Instruction Set:" Supports 40 RISC-V instructions, including arithmetic, logic, memory access, and branching.
- - 32-bit Data Path: Designed for 32-bit operations across all components like registers, ALU, and memory.
+ - 'Instruction Set:' Supports 40 RISC-V instructions, including arithmetic, logic, memory access, and branching.
+ - 2-bit Data Path: Designed for 32-bit operations across all components like registers, ALU, and memory.
  - Single-Cycle Execution: Each instruction is executed within one clock cycle.                                         
  - Control Unit: Decodes the opcode and generates control signals for all components.
  - ALU: Performs arithmetic and logic operations based on control signals.
