@@ -3,6 +3,3 @@ riscv32-unknown-elf-gcc -Og -mabi=ilp32 -march=rv32i -ffreestanding -nostdlib -o
 riscv32-unknown-elf-objdump -d code.elf > dumpfile
 riscv32-unknown-elf-objcopy  -O binary code.elf code.bin
 python3 makehex.py code.bin 1024 > code.hex
-python3 HextoBin.py
-python3 lines64.py
-python3 randomMEMgen.py
