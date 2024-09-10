@@ -1,5 +1,4 @@
-#                    
-   FemtoRV32-Single-Cycle-Processor
+# FemtoRV32-Single-Cycle-Processor
 This project implements a 32-bit RISC-V Single-Cycle Processor that supports that supports the base integer instruction set according to the specifications found here: https://riscv.org/technical/specifications/, covering a variety of arithmetic, logical, memory, and control operations.
 - supporting R- type instructions
 - supporting I- type instructions
