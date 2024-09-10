@@ -72,7 +72,18 @@ python3 makehex.py code.bin 1024 > code.hex
 python3 HextoBin.py
 python3 lines64.py
 python3 randomMEMgen.py
+```                    
+9. Simulating with `Icarus Verilog` and `GTKwave`                                                                                                 
+ ```bash
+iverilog src/*.v DataPath_tb.v -o program
+./program
 ```
+10. Run to check Functionality
+ ```bash
+gtkwave DataPath.vcd
+```
+11. enjoy :)
+    
 ** Note 1: All the previous commands only for linux users in existance of python3 package, VsCode, risc-v compliar.
 
 ** Note 2: Don't forget to link the `random_data.mem` location in the verilog code Data Memory, `output_64_lines_hex.txt` location in the verilog code Instruction Memory.                    
