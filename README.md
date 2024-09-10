@@ -1,4 +1,5 @@
-# FemtoRV32-Single-Cycle-Processor
+#                    
+   FemtoRV32-Single-Cycle-Processor
 This project implements a 32-bit RISC-V Single-Cycle Processor that supports that supports the base integer instruction set according to the specifications found here: https://riscv.org/technical/specifications/, covering a variety of arithmetic, logical, memory, and control operations.
 # Design Architecture
 
@@ -18,7 +19,12 @@ This project implements a 32-bit RISC-V Single-Cycle Processor that supports tha
 
 ![](https://github.com/3a3del/FemtoRV32-Single-Cycle-Processor/blob/main/InstructionSets.png)
   
-  
-  
+## Design Structure  
+ - `ControlUnit.v`: Verilog code for the Control Unit that generates control signals.                     
+ - `ALU.v`: Arithmetic Logic Unit for performing operations.
+ - `RegisterFile.v`: 32x32 register file implementation.
+ - `DataMemory.v`: Memory module for data load/store instructions.
+ - `InstructionMemory.v`: Stores program instructions.
+ - `top.v`: Top module integrating all the components.
   
   
