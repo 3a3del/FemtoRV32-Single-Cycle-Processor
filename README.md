@@ -35,6 +35,10 @@ This project implements a 32-bit RISC-V Single-Cycle Processor that supports tha
  - `RegisterFile.v`: 32x32 register file implementation.
  - `DataMemory.v`: Memory module for data load/store instructions.
  - `InstructionMemory.v`: Stores program instructions.
- - `top.v`: Top module integrating all the components.
+ - `top.v`: Top module integrating all the components.                                                            
   
+## Testing
+All Testing Source Codes in `Src` folder and the verification's pictures.
+
+## How to Run
   
