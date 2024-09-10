@@ -73,8 +73,20 @@ python3 HextoBin.py
 python3 lines64.py
 python3 randomMEMgen.py
 ```
-** Note 1: All the previous commands only for linux users in existance of python3 package, VsCode, risc-v compliar
+** Note 1: All the previous commands only for linux users in existance of python3 package, VsCode, risc-v compliar.
+
 ** Note 2: Don't forget to link the `random_data.mem` location in the verilog code Data Memory, `output_64_lines_hex.txt` location in the verilog code Instruction Memory.                    
-  
-
-
+## Windows User
+  1. Clone the Repo
+ ```bash
+  git clone https://github.com/username/risc-v-32-bit-processor.git
+  cd risc-v-32-bit-processor
+  ``` 
+2. Use any external tool or source to covert the assembly risc code to hex codes.
+3. get the random data for data Memory.
+ ```bash                    
+python3 randomMEMgen.py
+```
+4. Don't forget the Note 1,2.
+5. use questa Sim or vivado
+6. enjoy :)
