@@ -40,4 +40,5 @@ This project implements a 32-bit RISC-V Single-Cycle Processor that supports tha
 All Testing Source Codes in `Src` folder and the verification's pictures.
 
 ## How to Run
-  
+
+
