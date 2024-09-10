@@ -14,7 +14,9 @@ This project implements a 32-bit RISC-V Single-Cycle Processor that supports tha
  - Memory: Data Memory and Instruction Memory modules for loading/storing data and fetching instructions.
  - PC Control: Handles Program Counter (PC) updates for sequential and branch/jump instructions.  
   
-  
+## Supported Instructions
+
+![](https://github.com/3a3del/FemtoRV32-Single-Cycle-Processor/blob/main/InstructionSets.png)
   
   
   
