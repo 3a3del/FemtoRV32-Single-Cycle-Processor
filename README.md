@@ -40,5 +40,36 @@ This project implements a 32-bit RISC-V Single-Cycle Processor that supports tha
 All Testing Source Codes in `Src` folder and the verification's pictures.
 
 ## How to Run
-
-
+  1. Clone the Repo
+ ```bash
+  git clone https://github.com/username/risc-v-32-bit-processor.git
+  cd risc-v-32-bit-processor
+  ```                    
+  2. Write any assembly code that you need the processor to excute it, write it in .text Section the `code.S` in `firmware`.
+  3. Run first Commond in `gcc_commands.sh`, that assemble the source code to object code by `riscv32 compilar`
+ ```bash
+riscv32-unknown-elf-gcc -c -mabi=ilp32 -march=rv32i -o code.o code.S
+  ```
+4. Linking Step to get the Binary file
+ ```bash
+riscv32-unknown-elf-gcc -Og -mabi=ilp32 -march=rv32i -ffreestanding -nostdlib -o code.elf -Wl,--build-id=none,-Bstatic,-T,sections.lds,-Map,code.map,--strip-debug code.o -lgcc
+  ```
+5. After get the .elf file convert it to dumpfile to get the readable instruction file
+ ```bash
+riscv32-unknown-elf-objdump -d code.elf > dumpfile
+ ```                    
+  
+6. Get the risc-v Machine code file
+```bash
+riscv32-unknown-elf-objcopy  -O binary code.elf code.bin
+  ```                    
+7. Convert the Machine code instructions to Hex code to be read in our processor
+ ```bash
+python3 makehex.py code.bin 1024 > code.hex
+```
+8. First .py to convert the hex to bin 64 line as our instruction memory bear up to 32 x 64 inst, Second .py convert to 64 lines, third .py the get the random Memory data for our data memory
+ ```bash
+python3 HextoBin.py
+python3 lines64.py
+python3 randomMEMgen.py
+```
