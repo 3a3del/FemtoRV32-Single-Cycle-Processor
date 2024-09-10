@@ -73,3 +73,8 @@ python3 HextoBin.py
 python3 lines64.py
 python3 randomMEMgen.py
 ```
+** Note 1: All the previous commands only for linux users in existance of python3 package, VsCode, risc-v compliar
+** Note 2: Don't forget to link the `random_data.mem` location in the verilog code Data Memory, `output_64_lines_hex.txt` location in the verilog code Instruction Memory.                    
+  
+
+
