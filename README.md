@@ -10,7 +10,7 @@ This project implements a 32-bit RISC-V Single-Cycle Processor that supports tha
 - supporting AUIPC instruction
 - supporting AUIPC instruction
 
-# Design Architecture
+## Design Architecture
 
 ![](https://github.com/3a3del/FemtoRV32-Single-Cycle-Processor/blob/main/Arch.png)
   
