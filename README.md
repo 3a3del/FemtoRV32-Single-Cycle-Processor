@@ -8,7 +8,6 @@ This project implements a 32-bit RISC-V Single-Cycle Processor that supports tha
 - supporting JAL instruction
 - supporting JALR instruction
 - supporting AUIPC instruction
-- supporting AUIPC instruction
 
 ## Design Architecture
 
